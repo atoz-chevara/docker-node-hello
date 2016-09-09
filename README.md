@@ -28,8 +28,9 @@ Node.js Hello World on Raspbian using [docker][].
         docker ps
 
         > # Example
-        > ID                  IMAGE                           COMMAND              CREATED             STATUS              PORTS
-        > ecce33b30ebf        atoz/raspbian-node-hello:latest   node /src/index.js   10 seconds ago      Up 9 seconds        49160->8080
+        > CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                     NAMES
+        > 27969a4a453e        atoz/raspbian-node-hello    "/usr/bin/entry.sh no"   42 seconds ago      Up 39 seconds       0.0.0.0:49160->8080/tcp   elated_knuth
+
 
 -   Test app using the port in previous step, e.g. 49160:
 
