@@ -37,7 +37,7 @@ Node.js Hello World on Raspbian using [docker][].
         curl localhost:<port>
 
         # Example
-        # curl localhost:49163
+        # curl localhost:49160
 
     It should print `Hello World` to the console.
 
