@@ -6,7 +6,7 @@
 # 3. Build container: docker build .
 
 FROM resin/rpi-raspbian
-MAINTAINER atozchevara <atoz.chevara@yahoo.com>
+MAINTAINER Izharul Haq <atoz.chevara@yahoo.com>
 
 # install required packages
 RUN apt-get update
