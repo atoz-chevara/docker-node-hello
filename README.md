@@ -17,7 +17,7 @@ Node.js Hello World on Raspbian using [docker][].
 -   Run app:
 
         make run-container
-        # docker run -p 49160:8080 -d atozchevara/rpi-node-hello
+        # docker run --name rpi-node-hello -p 49160:8080 -d atozchevara/rpi-node-hello
 
 -   Install `curl`:
 
@@ -29,7 +29,7 @@ Node.js Hello World on Raspbian using [docker][].
 
         > # Example
         > CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                     NAMES
-        > 27969a4a453e        atozchevara/rpi-node-hello    "/usr/bin/entry.sh no"   42 seconds ago      Up 39 seconds       0.0.0.0:49160->8080/tcp   elated_knuth
+        > 99c637eb9c70        atozchevara/rpi-node-hello   "/usr/bin/entry.sh no"   31 seconds ago      Up 28 seconds       0.0.0.0:49160->8080/tcp   rpi-node-hello
 
 
 -   Test app using the port in previous step, e.g. 49160:
