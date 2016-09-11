@@ -45,5 +45,10 @@ Node.js Hello World on Raspbian using [docker][].
 
 Many thanks to @gasi and @enokd for their source code.
 
+## Notes
+
+This image has available at [docker hub][docker-hub].
+
 [node-js-download]: http://nodejs.org/download/
 [docker]: http://docker.io
+[docker-hub]: https://hub.docker.com/r/atozchevara/rpi-node-hello/
