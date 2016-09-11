@@ -11,6 +11,10 @@ FROM resin/rpi-raspbian:jessie
 # File Author / Maintainer
 MAINTAINER Izharul Haq <atoz.chevara@yahoo.com>
 
+RUN [ "cross-build-start" ]
+
+ENV LANG C.UTF-8
+
 ## BEGIN INSTALLATION
 
 # install required packages
@@ -31,3 +35,5 @@ EXPOSE 8080
 
 # run application
 CMD ["node", "/src/index.js"]
+
+RUN [ "cross-build-end" ]
