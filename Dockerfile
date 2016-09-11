@@ -5,20 +5,29 @@
 # 2. Checkout source: git@github.com:atoz-chevara/rpi-node-hello.git
 # 3. Build container: docker build .
 
-FROM resin/rpi-raspbian
+# Set the base image
+FROM resin/rpi-raspbian:latest
+
+# File Author / Maintainer
 MAINTAINER Izharul Haq <atoz.chevara@yahoo.com>
 
+## BEGIN INSTALLATION
+
 # install required packages
-RUN apt-get update
-RUN apt-get install -y wget dialog npm
+RUN apt-get update && install -y wget dialog npm && apt-get -y clean
 
 # install nodejs
 RUN npm install -g n
 RUN n stable
 
+# Copy node.js script
 COPY . /src
 RUN cd /src; npm install
 
-# run application
+## IMAGE CONFIGURATION
+
+# Expose HTTP
 EXPOSE 8080
+
+# run application
 CMD ["node", "/src/index.js"]
