@@ -6,7 +6,7 @@
 # 3. Build container: docker build .
 
 # Set the base image
-FROM resin/rpi-raspbian:latest
+FROM resin/rpi-raspbian:jessie
 
 # File Author / Maintainer
 MAINTAINER Izharul Haq <atoz.chevara@yahoo.com>
