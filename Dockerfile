@@ -14,7 +14,7 @@ MAINTAINER Izharul Haq <atoz.chevara@yahoo.com>
 ## BEGIN INSTALLATION
 
 # install required packages
-RUN apt-get update && install -y wget dialog npm && apt-get -y clean
+RUN apt-get update && apt-get install -y wget dialog npm && apt-get -y clean
 
 # install nodejs
 RUN npm install -g n
